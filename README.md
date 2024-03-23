@@ -15,3 +15,5 @@ Mi aplicacion es para hoteles se ocupa de las reservas, los huespedes y las habi
 3.Finalemnete para correr el servidror: python manage.py runserver
 
 4. adjunto un video explicativo
+
+5. El super usuario es Facu25 y el password es pytho123
