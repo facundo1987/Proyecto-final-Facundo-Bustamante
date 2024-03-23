@@ -1,0 +1,24 @@
+{% extends "AppGema/padre.html" %}
+
+{% block titulo %}
+
+Guest
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+<form action=""method="POST"> {% csrf_token %}
+
+    <p>¿Esta seguro que desea eliminar el huesped?</p>
+
+    <input type="submit"value = "eliminar">
+
+
+
+
+
+
+
+{% endblock %}

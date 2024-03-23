@@ -1,0 +1,89 @@
+{% extends "AppGema/padre.html" %}
+
+
+
+
+{% block descripcion %}
+
+
+{% for reserva in reservations %}
+<p>Nombre: {{reserva.nombre}}</p>
+<p>Apellido: {{reserva.apelllido}}</p>
+<p>Ingreso: {{reserva.checkin}}</p>
+<p>Salida: {{reserva.checkout}}</p>
+
+<button>
+
+    <a href="{% url 'Reservas_editar' reserva.nombre %}"> Editar Reserva</a>
+
+</button>
+<button>
+    <a href="{% url 'Reservas_eliminar' reserva.nombre%}"> Eliminar Reserva</a>
+</button>
+
+
+
+{% endfor %}
+
+<br>
+
+<a href="{% url 'Reservas_crear' %}"> Reservar</a>
+
+
+</body>
+</html>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

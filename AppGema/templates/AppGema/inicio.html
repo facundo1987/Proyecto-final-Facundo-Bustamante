@@ -1,0 +1,31 @@
+{% extends "AppGema/padre.html" %}
+
+
+{% load static %}
+
+
+{% block titulo %}
+
+{{mensaje}}
+
+{% endblock %}
+
+
+
+
+
+{% block descripcion %}
+
+<div class="d-flex justify-content-center">
+    <div class="text-center">
+        
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Comienze a planear sus vacaciones lejos de las preocupaciones.</h2>
+        {% if user.is_authenticated %}
+        <a class="btn btn-primary" href="{% url 'Reservas_crear' %}">Reservar ahora</a>
+        {% else %}
+        <a class="btn btn-primary" href="{% url 'Login' %}">Log in</a>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

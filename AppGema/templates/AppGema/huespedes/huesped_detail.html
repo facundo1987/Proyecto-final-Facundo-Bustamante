@@ -1,0 +1,24 @@
+{% extends "AppGema/padre.html" %}
+
+{% block titulo %}
+
+Guest
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+
+<p>Nombre: {{huesped.nombre}}</p>
+<p>Apellido: {{huesped.apellido}}</p>
+<p>Correo: {{huesped.correo}}</p>
+
+<a href="{% url 'Huespedes_Leer' %}">Regresar</a>
+
+
+
+
+
+
+{% endblock %}

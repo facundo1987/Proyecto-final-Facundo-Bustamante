@@ -1,0 +1,28 @@
+{% extends "AppGema/padre.html" %}
+
+{% block titulo %}
+
+Rooms
+
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+<p>Nombre: {{habitacion.nombre}}</p>
+<p>Cama/s: {{habitacion.camas}}</p>
+
+<a href="{% url 'Habitaciones_Leer' %}">Regresar</a>
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

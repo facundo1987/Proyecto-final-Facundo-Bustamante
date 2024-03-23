@@ -1,0 +1,25 @@
+{% extends "AppGema/padre.html" %}
+
+{% block titulo %}
+
+Rooms
+
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+<form action=""method="POST"> {% csrf_token %}
+
+    {{form.as_p}}
+
+    <input type="submit"value = "Guardar cambios">
+
+
+
+
+
+
+
+{% endblock %}

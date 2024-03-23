@@ -1,0 +1,25 @@
+{% extends "AppGema/padre.html" %}
+
+{% block titulo %}
+
+Rooms
+
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+<form action=""method="POST"> {% csrf_token %}
+
+    <p>¿Esta seguro que desea eliminar la habitacion?</p>
+
+    <input type="submit"value = "eliminar">
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "AppGema/padre.html" %}
+
+{% block titulo %}
+
+Rooms
+
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+{% for  habitacion in object_list %}
+
+<p>Nombre: {{habitacion.nombre}}</p>
+
+{% if user.is_authenticated %}
+
+<a href="{% url 'Habitaciones_Detalle' habitacion.id %}"> Ver Habitacion</a>
+<a href="{% url 'Habitaciones_Editar' habitacion.id %}"> Editar Habitacion</a>
+<a href="{% url 'Habitaciones_Borrar' habitacion.id %}"> Eliminar Habitacion</a>
+
+
+{% else %}
+
+<a href="{% url 'Habitaciones_Detalle' habitacion.id %}"> Ver Habitacion</a>
+
+{% endif %}
+
+
+{% endfor %}
+
+<br>
+
+{% if user.is_authenticated %}
+<a href="{% url 'Habitaciones_Crear' %}"> Nueva Habitacion </a>
+{% endif %}
+
+
+
+
+
+{% endblock %}

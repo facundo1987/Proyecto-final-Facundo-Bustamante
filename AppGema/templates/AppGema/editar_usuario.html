@@ -1,0 +1,22 @@
+{% extends "AppGema/padre.html" %}
+
+
+{% load static %}
+
+
+
+
+
+
+
+
+{% block descripcion %}
+
+<form action=""method="POST">{% csrf_token %}
+
+
+    {{formulario.as_p}}
+
+    <button type="submit"> Editar </button></button>
+
+    {% endblock %}

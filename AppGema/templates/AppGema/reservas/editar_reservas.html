@@ -1,0 +1,29 @@
+{% extends "AppGema/padre.html" %}
+
+
+{% load static %}
+
+
+
+
+
+
+{% block descripcion %}
+
+<form action=""method="POST">{% csrf_token %}
+
+
+    {{miFormulario}}
+
+    <button type="submit"> Guardar cambios </button></button>
+
+    {% endblock %}
+
+
+
+
+
+
+
+
+    

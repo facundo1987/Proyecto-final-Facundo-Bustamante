@@ -1,0 +1,40 @@
+{% extends "AppGema/padre.html" %}
+
+{% block titulo %}
+
+Guest
+
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+    {% for  huesped in object_list %}
+
+    <p>Nombre: {{huesped.nombre}}</p>
+    
+    
+
+    
+    <a href="{% url 'Huespedes_Detalle' huesped.id %}"> Ver Huesped</a>
+    <a href="{% url 'Huespedes_Editar' huesped.id %}"> Editar Huesped</a>
+    <a href="{% url 'Huespedes_Borrar' huesped.id %}"> Eliminar Huesped</a>
+
+    
+    
+
+
+    {% endfor %}
+
+    <br>
+
+    <a href="{% url 'Huespedes_Crear' %}"> Nuevo Huesped </a>
+
+
+</body>
+</html>
+
+
+
+{% endblock %}
