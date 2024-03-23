@@ -228,7 +228,7 @@ def editar_reservas(request, name):
             
             return render(request, "AppGema/inicio.html")
     else:
-        miFormulario = ReservaFormulario(initial={"ingreso": reserva.checkin, "egreso": reserva.checkout}) 
+        miFormulario = ReservaFormulario(initial={"nombre": reserva.nombre, "apellido": reserva.apellido}) 
     
     return render(request, "AppGema/reservas/editar_reservas.html", {"miFormulario": miFormulario, "nombre": name})
 

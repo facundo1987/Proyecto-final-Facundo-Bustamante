@@ -23,7 +23,7 @@ urlpatterns = [
     path("leer_reservas/", leer_reservas, name="Reservas_leer"),
     path("crear_reservas/", crear_reservas, name="Reservas_crear"),
     path("eliminar_reservas/<fecha_ingreso>/", eliminar_reservas, name = "Reservas_eliminar"),
-    path("editar_reservas/<fecha_ingreso>/", editar_reservas, name = "Reservas_editar"),
+    path("editar_reservas/<nombre>/", editar_reservas, name = "Reservas_editar"),
     
     #CRUD de huesped 
     
