@@ -197,9 +197,9 @@ def crear_reservas(request):
     return render(request, "AppGema/reservas/reservaformulario.html", {"miFormulario": miFormulario})
 
 @login_required
-def eliminar_reservas(request, fecha_ingreso):
+def eliminar_reservas(request, name):
     
-    reserva = Reserva.objects.get(checkin = fecha_ingreso)
+    reserva = Reserva.objects.get(nombre =name)
     reserva.delete()
     
     reservas = Reserva.objects.all()
