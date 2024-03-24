@@ -16,4 +16,4 @@ Mi aplicacion es para hoteles se ocupa de las reservas, los huespedes y las habi
 
 4. adjunto un video explicativo
 
-5. El super usuario es Facu25 y el password es pytho123
+5. El super usuario es Facu25 y el password es python123
